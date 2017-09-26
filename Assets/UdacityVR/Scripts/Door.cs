@@ -8,7 +8,15 @@ public class Door : MonoBehaviour
     // Create a boolean value called "opening" that can be checked in Update() 
 	private bool locked = true;
 	private bool isOpening = false;
+	private AudioSource audioSource;
+
 	public float raisedHeight;
+	public AudioClip lockedSound;
+	public AudioClip openSound;
+
+	void Start(){
+		audioSource = GetComponent<AudioSource> ();
+	}
 
     void Update() {
         // If the door is opening and it is not fully raised
@@ -29,6 +37,9 @@ public class Door : MonoBehaviour
 		Debug.Log("Door Clicked");
 		if (!locked) {
 			isOpening = true;
+			audioSource.PlayOneShot (openSound);
+		} else {
+			audioSource.PlayOneShot (lockedSound);
 		}
     }
 

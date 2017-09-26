@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4397884753720222}
   m_Layer: 0
-  m_Name: H-bound 16
+  m_Name: OpenHorizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

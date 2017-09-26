@@ -6,7 +6,7 @@ public class Key : MonoBehaviour
 {
     //Create a reference to the KeyPoofPrefab and Door
 	public GameObject keyPoofPrefab;
-	public GameObject door;
+	public Door door;
 
 	void Update()
 	{
@@ -27,6 +27,7 @@ public class Key : MonoBehaviour
         // Destroy the key. Check the Unity documentation on how to use Destroy
 		GameObject.Instantiate(keyPoofPrefab,transform.position, keyPoofPrefab.transform.rotation);
 		Destroy (gameObject);
+		// Since the key may generated dynamically, search the scene for a Door object
 		GameObject.FindObjectOfType<Door> ().Unlock ();
     }
 

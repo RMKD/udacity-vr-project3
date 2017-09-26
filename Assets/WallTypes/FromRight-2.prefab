@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4535814898756076}
   m_Layer: 0
-  m_Name: '(7,6): FromRight'
+  m_Name: FromRight-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

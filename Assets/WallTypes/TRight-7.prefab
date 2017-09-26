@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4347802499272236}
   m_Layer: 0
-  m_Name: V-bound 7
+  m_Name: TRight-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
